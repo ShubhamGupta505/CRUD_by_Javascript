@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h3 class="center" style="color: red">Student Data</h3>
+        <table class="centerTable margin" border="1" id="myTable">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Gender</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Sociology</th>
+                <th>English</th>
+                <th>Hindi</th>
+            </tr>
+        </table>
+    <h3 class="center margin">Student Data Entry</h3>
+    <!-- <form class="center margin" id="myForm" onsubmit="myFunction() ; return false" required> -->
+        <div class="center margin">
+            <label>ID:</label>
+            <input id="numId" type="number" class="margin" readonly><br>
+            <label>Name:</label>
+            <input id="name" type="text" class="margin" placeholder="Enter Name" required><br>
+            <label>Surname:</label>
+            <input id="surname" type="text" class="margin" placeholder="Enter Surname" required><br>
+            <label>Gender:</label>
+            <input id="gender" type="text" class="margin" placeholder="M OR F OR O" required><br>
+            <label>Maths:</label>
+            <input id="maths" type="number" class="margin" placeholder="Maths Marks" required><br>
+            <label>Science:</label>
+            <input id="science" type="number" class="margin" placeholder="Science Marks" required><br>
+            <label>Sociology:</label>
+            <input id="sociology" type="number" class="margin" placeholder="Sociology Marks" required><br>
+            <label>English:</label>
+            <input id="english" type="number" class="margin" placeholder="English Marks" required><br>
+            <label>Hindi:</label>
+            <input id="hindi" type="number" class="margin" placeholder="Hindi Marks" required><br>
+            <div id="btns" ><button id="save" class="textBold">Save</button>
+                <button id="next" class="textBold" onclick="nextData()">Next</button>
+                <button id="previous" class="textBold" onclick="proviousData()">Previous</button>
+                <button id="delete" class="textBold" onclick="delectData()">Delete</button>
+                <button id="new" class="textBold" type="submit" onclick="myFunction()">Add New</button>
+            </div>
+        </div>
+                <script src="script.js"></script>
+</body>
+</html>
